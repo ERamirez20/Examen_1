@@ -7,84 +7,130 @@
             padding: 10px;
             }
 
-            /* Header */
-        .main-header {
-            background-color: #ffffff;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #dddddd;
-        }
 
-        .logo h1 {
-            color: #1f4e79;
-            font-size: 28px;
-        }
 
-        .main-nav {
-            display: flex;
-            gap: 25px;
-        }
+            :root {
+    --color-fondo-principal: #0F172A;
+    --color-fondo-secundario: #1E293B;
+    --color-tarjeta: #111827;
 
-        .main-nav a {
-            text-decoration: none;
-            color: #333333;
-            font-weight: bold;
-        }
+    --color-texto-principal: #F8FAFC;
+    --color-texto-secundario: #CBD5E1;
 
-        .main-nav a:hover {
-            color: #1f4e79;
-        }
+    --color-acento: #38BDF8;
+    --color-acento-hover: #0EA5E9;
 
-        /* Banner principal */
-        .hero {
-            min-height: 500px;
-            padding: 60px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-            background-color: #f4f8fb;
-        }
+    --color-borde: #334155;
+    --color-borde-brillante: #38BDF8;
 
-        .hero-content {
-            flex: 1;
-        }
+    --color-exito: #22C55E;
+    --color-advertencia: #FACC15;
+    }
 
-        .hero-content h2 {
-            font-size: 42px;
-            color: #1f4e79;
-            margin-bottom: 20px;
-        }
+    .header-principal {
+        background-color: var(--color-fondo-secundario);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid var(--color-borde);
+    }
 
-        .hero-content p {
-            font-size: 18px;
-            color: #444444;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
+    .logo h1 {
+        color: var(--color-acento);
+        font-size: 30px;
+    }
 
-        .btn-primary {
-            display: inline-block;
-            background-color: #1f4e79;
-            color: #ffffff;
-            padding: 14px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .menu {
+        display: flex;
+        gap: 20px;
+    }
 
-        .btn-primary:hover {
-            background-color: #163955;
-        }
+    .menu a {
+        color: var(--color-texto-principal);
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        .hero-image {
-            flex: 1;
+    .menu a:hover {
+        color: var(--color-acento-hover);
+    }
+
+    .banner-principal {
+        background-color: var(--color-fondo-principal);
+        color: var(--color-texto-principal);
+        padding: 50px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .banner-texto {
+        width: 50%;
+    }
+
+    .banner-texto h2 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .banner-texto p {
+        color: var(--color-texto-secundario);
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .boton {
+        background-color: var(--color-acento);
+        color: var(--color-fondo-principal);
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .boton:hover {
+        background-color: var(--color-acento-hover);
+    }
+
+    .banner-imagen {
+        width: 50%;
+        text-align: center;
+    }
+
+    .banner-imagen img {
+        width: 100%;
+        max-width: 380px;
+        border: 2px solid var(--color-borde-brillante);
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    /* Responsive para mi parte */
+    @media (max-width: 768px) {
+        .header-principal {
+            flex-direction: column;
+            gap: 15px;
             text-align: center;
         }
 
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 15px;
+        .menu {
+            flex-direction: column;
+            gap: 10px;
         }
+
+        .banner-principal {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .banner-texto,
+        .banner-imagen {
+            width: 100%;
+        }
+
+        .banner-texto h2 {
+            font-size: 30px;
+        }
+    }
