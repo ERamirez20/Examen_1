@@ -5,14 +5,39 @@
         <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>   
+    <title>compraFácil</title>   
     <link rel="stylesheet" href="CSS/style.css">
         </head>           
 
         <body>
-            <h1 class="tituloPrincipal"> Bienvenido a compraFácil </h1> 
-            <h2> This is my first HTML page </h2>    
+            <header class="main-header">
+            <div class="logo">
+            <h1>compraFácil </h1> 
+            </div>
+            <nav class="main-nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            </header>
 
+            <main>
+                <section id="inicio" class="hero">
+                    <div class="hero-content">
+                        <h2>Compra en línea de forma rápida y segura</h2>
+                        <p>
+                            Encuentra productos tecnológicos, accesorios y artículos para el hogar
+                            con precios accesibles y entrega hasta la puerta de tu casa.
+                        </p>
+                        <a href="#productos" class="btn-primary">Ver productos</a>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="../img/carrito-compras.jpg" alt="Carrito de compras en línea">
+                    </div>
+                </section>
+            </main>
         </body>
 
 
