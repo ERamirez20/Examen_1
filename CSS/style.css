@@ -6,3 +6,39 @@
             border: 2px solid black;
             padding: 10px;
             }
+
+        .productos{
+            padding: 40px;
+            text-align: center;
+        }
+
+        .productos h2{
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .grid-productos{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img{
+            width: 100%;
+            display: block;
+        }
+
+        .card h3{
+            margin: 15px 0 10px;
+        }
+
+        .card p{
+            padding: 0 15px;
+        }
