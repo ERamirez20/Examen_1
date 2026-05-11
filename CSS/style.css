@@ -8,6 +8,51 @@
             }
 
 
+            .social-links{
+            display: flex; 
+            flex-direction: row;
+            border: 1px solid var(--color-borde-brillante);
+            gap: 20px;
+            justify-content: center;
+            padding: 15px;
+            }
+
+                    .social-links a {
+            color: var(--color-acento);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            color: var(--color-acento-hover);
+        }
+
+            @media (max-width: 768px ){
+                .social-links{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+            }
+
+            .footer{
+                background-color:var(--color-fondo-secundario) ;
+                padding: 30px 20px;
+                color: var(--color-texto-secundario) ;
+                border-top: 1px solid var(--color-borde);
+                text-align: center;
+            }
+
+            @media(max-width: 768px){
+                flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+            }
+
+
+
+
 
             :root {
     --color-fondo-principal: #0F172A;
