@@ -1,75 +1,101 @@
-        <!DOCTYPE html>
-    
-        <html lang="en">
+<!DOCTYPE html>
 
-        <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>   
+    <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-        </head>           
+</head>
 
-        <body>
-            <h1 class="tituloPrincipal"> Bienvenido a compraFácil </h1>    
-            <main>
-                <section class="productos">
-                    <h2>Productos Destacados</h2>
+<body>
+    <h1 class="tituloPrincipal"> Bienvenido a compraFácil </h1>
 
-                    <div class="grid-productos">
+    <section class="hero">
+        <div class="hero-contenido">
+            <h2>Nueva Colección 2026</h2>
+            <p>Estilo y comodidad para cada ocasión</p>
+             <p>
+            Somos una tienda apasionada por la moda y la autenticidad. 
+            Desde 2010, nos dedicamos a ofrecer prendas que combinan diseño actual, 
+            tejidos de calidad y precios accesibles. Cada colección está pensada 
+            para que te sientas cómodo, seguro y a la moda en tu día a día, 
+            tanto en el trabajo como en tus momentos de ocio. 
+        </p>
+        </div>
+    </section>
 
-                        <article class="card">
-                            <img src="data:image/jpeg;base64,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" alt="Camisa">
-                            <h3>Camisa de botones</h3>
-                            <p>Tela suave y transpirable</p>
-                        </article>
+    <main>
+        <section class="productos" id="productos">
+            <h2>Productos Destacados</h2>
 
-                        <article class="card">
-                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBIQEBAPDxASFRUSDw8PDw8NDQ8QFRIWFhUSFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0OGA0NFS0ZFR0rKystLS0rLSstLSsrKy0rLSstLSsrKzcrLSs3LS0tKysrLSsrKysrKysrKysrKysrK//AABEIAQMAwgMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgMEBQYBB//EAEIQAAIBAQMGCgcGBQUBAAAAAAABAgMEETEGIVFxcrEFEiMkMkFhobLBIjNzgYKR0RM0YrPC8BRSY5LhQ0RToqNC/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAIBA//EABgRAQEBAQEAAAAAAAAAAAAAAAABMQIh/9oADAMBAAIRAxEAPwD7iAAAAAAADC4YtLp0Zzi7pK5J4520vM5KpwxaGlys88lHNxY3XzUepdp0OVU+Quvxlf7km/ocjCLcoReHGbedYxzrviiOr6qM5WireuXtDwb5WS0q7NstninWvXObR1X31Hnud+nruaI087ldpu6/5cPm5Hrl5+f1Ja9jO0ZudV3hjJ52lK949q/tPK1pqJ04zqTqOcuIpNzTXoyl1O7QST/eb8X1Ma3TunQ9r2fySA2MalRZvt54JXcao2rs1/SIp1VhXqZ8/Sqda7Ze8i6d6uvuueKztrDOTvw925miMnWf+4rq9vCcldemkulp3E6VqqqfF+3q9HjJuTd+dJ46M39xBy8utdn+SFR8rT/Fx43/AAqX6GBsKdurf8s/fxH5G54KtMpqXGd7V3UlmerUc/HFr6m14En6TWlbn/k2VlbkAFpAAAAAAAAAAAAAAAAc7lY73SjtPuRz8KfGvlfc1JtP5o32Uz5Wmvw75Gks+D1vec7qosowu43a732u5LyPasc6lpuT19TJxDV6uMaqmrnHRfd7n1fMprRvcc/Rqxu+eBkVujqKbuhf11P0TfkBsHvZBLDUeyWbrFHACq0q7i60/kSqU+M4SWMJcZX4Z4Si/Gxa+onQwAsjir/ebDgp8pH3ruZgSxRmcHvlI619DYV0IAOiAAAAAAAAAAAAAAAAHL5Ry5xFaKa8bNTQNjlFLnd39JeJmBQRzurixkonkkeQMEa+BVW/0faP8moXVSq0xzUuyd//AJzXmBmfvvPaBVKp+/eTsbvT1sCNqLKDK7SToYAWsyrC/TjtLejFMixdOO0t6Ng6UAHRAAAAAAAAAAAAAAAADjMopc9fso72Y9IvyjXPG/6aKoHK6uLCtYliRXUAVcCu1YU3on+iZbUwIWiKdN9lzWe53gKk8zfZ3k+Cn6CMGNXjJpX5k789913mzP4LjdTRglaHnLKSzFVbEuhgaJousr9OOtb0UIus/TjtLebB1AAOiAAAAAAAAAAAAAAAAHG5SrnXwIpijIyjXOW9EYFEMDldXE0QqE0RmBCLzGNw1WdOyVqixhBy+WPcXxPbbY1WpSoNuKrL7FyWdxVR8S9arwNLwXN/w0W3fKcU79KZ0VkV0FqNQ+Df4aTsqlKao8SMJzu40oOKabuzX57vcbmmromRql9IuZVBZy2RrEky6z9KOtbyiJdQ6Uda3oDqQAdUAAAAAAAAAAAAAAAAOKynrNVKs1/8p44PixWY8p4GPlm7oWprFQqta+I7i+yu9X6c5yurTTIVGSZXUAhTM+yK+rSX44v5O/yMKijYcGq+0Utcn8qchBj5SwutsfxUot61Ka8kTvzF2VMecUXphJfKSfmUSwF0iNJEmKaPGBKJOk+v9ppkIiySvh75r5TkIOuTPSNPBaluJHVAAAAAAAAAAAAAAAADjstLKp/aU1m+1otNrHjSU437jG4OjdTitEVuNplMuVXs14ma2w9FaluOV1cTmVTwLazKp4GD2hibTgWN9oj2Rk+67zNXQNxwCuWk9EH4omzSq8ro8pZpe0j81B+Rhp4GwywXo0JaKl3zhL6Grps3rWTFxEl1ESWpocF0mnGMkrnUb7HGVRy3MGRYV6dPaibB0wAOqAAAAAAAAAAAAAAAAHN5RrlVsR8UjVWJ5lqW42uUj5WOxuk/qaiwnO6qL65Sy6vgUXktToG6yfXKT2VvNLRN5k906mqO9lc6VHLBcjT7KsfBNeZpaDN7lcuQj2VI7mc/Z2OtZMZbPDy89RLUkZVh6dPaRimXYVykNpFQdIADogAAAAAAAAAAAAAAABzWU/rY+ze9mnsLx1y8TNvlP66PZTfiNPZY3Nrtb/ubfmcrq4y6uBjGTPAx7jBOkbzJ3pVNUd8jR08TfZOrPU+H9RXOsr3K37t8cN5zlnWY6TKtc2ltQ8aOdpLMOtJi2MixFMS1EtSbzMzLC+VhtGGtBmWD1sNo2FdIADqgAAAAAAAAAAAAAAABzGVD5WPs13zf0NRSxNplX61ezj4pmqovOc7q4zHgY7MiBRVRIlTZvsnf9T4f1HPUXnOiycwqa4+ZXOsq3KVc2nrh+ZE5pYHT5RLm09cPzInL35h1pHqZdEoRdAlqaMuwPlIbSMQybA+UhtLebB1AAOqAAAAAAAAAAAAAAAAHKZVvlkv6cfFM1NB5zaZVev8Agj4p/U1VnOV1cZ1MqrlkGRrmCmg850uTnRnrW5nNUMTpcnOjPWtxXOlXZQ/dqnwfmROUOryj+61dS8aOTg70OtZFkS6JVEsiS1MvsL5SntR3mOX2N8pT24+JGwdYADqgAAAAAAAAAAAAAAAByWVHr1srzNVQxNnlQ+X+FeZrKOJyurjLge1MCMSbwMFFM6TJvoT2luObgdJk16ue1+lFc6yr8ofutXUvEjjaEjssovutbYZxFnY705Z0SxFcCxEtSvLrI+Uhtx8SKCyzv04bUfEjR2IAOqAAAAAAAAAAAAAAAAHHZSvnMtmO41tLEz8o3zmeqPhRgUzldXGUixFSLIswU9Z0uTXq5bf6YnNzxOlya9VLbfhiVzrKv4dXNq3s5bjg7N1HfcNLm1f2c/CzgLO8B3py2NMsTKqbzFiJakTov0o7S3orJU+lHWt5o7UAHVAAAAAAAAAAAAAAAADicovvU/h8CMKBmZQvnVT4fAjCgcrq4yCyLKkycWYFRHS5NrkXtPcjm5HT5PLkI9rlvuK51lZHCkb6FZaac1/0Z87s7wPpNqjfTmtMZLuZ82oYjs5bGBYiqBYiWpHsXnWtbyJ6B3AAOyAAAAAAAAAAAAAAAAHC8PvnVTXHwRMWBkcOfequteFGLE43VxkRwJoqiWICTZ1fAS5vD4vEzk+o6/ghXUKezf8APOVzrKy5LM0fM4LP73vPpp82qRum1ok13m9nLKplpVAmQ1NBs8QYHdIHkcEenZAAAAAAAAAAAAAAAADguGHzqrteSMWOJfws+c1duXcyiKznG6tdF5id5XBE2gJnZ8Gq6jT2I+FHFZzubLG6EFojFdxfDKtPm9td1eqtFSa+Umj6QfOeEo3Wqvo+0k/m7x2craTJ3lccx6mQpbee3laxJBju6b9FaluJFdDoR1LcWHZAAAAAAAAAAAAAAAADkuGbLD+Im+Ljc3neLSvMSNCOjvYBzq4nGjHR1aWTVGOjvYBg9jQjo72dhFZkAVymvTjOGKEf4iq7utvF4uKPAb3hFP2S0aetk1Sjo72Ac1pwox0d7LYWeLaV3XpYBsY66KuVywWZHoB1QAAAAAAAA//Z" alt="Pantalon">
-                            <h3>Pantalon</h3>
-                            <p>Pantalon para ocaciones especiales</p>
-                        </article>
+            <div class="grid-productos">
 
-                        <article class="card">
-                            <img src="https://www.payless.cr/518429-thickbox_default/men_s_nova_sport_shoes.jpg" alt="Tenis">
-                            <h3>Tenis</h3>
-                            <p>Tenis deportivos</p>
-                        </article>
+                <article class="card">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Camisa">
+                    <h3>Camisa de botones</h3>
+                    <p>Tela suave y transpirable</p>
+                    <span class="precio">₡15,000</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </article>
 
-                        <article class="card">
-                            <img src="https://www.sportline.cr/media/catalog/product/n/b/nb21-00a-nk-3yb_phsfh000-2000.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Gorra">
-                            <h3>Gorra</h3>
-                            <p>Gorra deportiva</p>
-                        </article>
+                <article class="card">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Pantalon">
+                    <h3>Pantalon</h3>
+                    <p>Pantalon para ocaciones especiales</p>
+                    <span class="precio">₡30,000</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </article>
 
-                    </div>
-                </section>
-            </main>
+                <article class="card">
+                    <img src="https://www.payless.cr/518429-thickbox_default/men_s_nova_sport_shoes.jpg" alt="Tenis">
+                    <h3>Tenis</h3>
+                    <p>Tenis deportivos</p>
+                    <span class="precio">₡57,000</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </article>
 
+                <article class="card">
+                    <img src="https://www.sportline.cr/media/catalog/product/n/b/nb21-00a-nk-3yb_phsfh000-2000.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:"
+                        alt="Gorra">
+                    <h3>Gorra</h3>
+                    <p>Gorra deportiva</p>
+                    <span class="precio">₡12,000</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </article>
 
-
-
-
-
-
-            
-            <footer class="footer">
-            
-            <h2>CompraFácil, tu tienda de confianza</h2>
-    
-
-            <div class="social-links">
-                <a href="#"> Facebook </a>
-                <a href="#"> Siguenos en X </a>
-                <a href="#"> Nuestro Pinterest!</a>
-                </div>
-
-                
-                    <p>&copy; 2026 CompraFácil. Todos los derechos reservados</p>
-                
-                
-            </footer>
-
-        </body>
+            </div>
+        </section>
+    </main>
 
 
-        </html>
+
+
+
+
+
+
+    <footer class="footer">
+
+        <h2>CompraFácil, tu tienda de confianza</h2>
+
+
+        <div class="social-links">
+            <a href="#"> Facebook </a>
+            <a href="#"> Siguenos en X </a>
+            <a href="#"> Nuestro Pinterest!</a>
+        </div>
+
+
+        <p>&copy; 2026 CompraFácil. Todos los derechos reservados</p>
+
+
+    </footer>
+
+</body>
+
+
+</html>
